@@ -4,7 +4,4 @@ scikit-learn
 joblib
 nltk
 symspellpy
-tensorflow
-matplotlib
-numpy
 scipy

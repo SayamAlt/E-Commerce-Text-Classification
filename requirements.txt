@@ -7,4 +7,3 @@ symspellpy
 tensorflow
 matplotlib
 numpy
-zipfile

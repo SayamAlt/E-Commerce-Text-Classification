@@ -5,3 +5,6 @@ joblib
 nltk
 symspellpy
 tensorflow
+matplotlib
+numpy
+zipfile

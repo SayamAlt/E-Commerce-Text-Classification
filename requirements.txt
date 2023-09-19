@@ -7,3 +7,4 @@ symspellpy
 tensorflow
 matplotlib
 numpy
+scipy

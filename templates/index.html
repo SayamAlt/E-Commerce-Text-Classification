@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Category Prediction</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: #f78848;
+        }
+        .navbar-brand {
+            display: block;
+            margin: auto;
+            color: #f04ada;
+            font-weight: bold;
+            font-family: "Helvetica";
+        }
+        .submit-button {
+            display: block;
+            margin: auto;
+        }
+        p {
+            text-align: center;
+        }
+        p:hover {
+            filter: brightness(150%);
+        }
+        textarea {
+            display: block;
+            margin: 3rem auto;
+            text-align: center;
+        }
+        h1 {
+            color: #780233;
+            font-family: 'Georgia', serif;
+            font-size: 3rem;
+            font-weight: bold;
+        }
+        h3 {
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            color: #ff0080;
+            font-size: 2rem;
+            margin: 3rem 1rem;
+        }
+        .copyright{
+            color: #2d1280;
+            font-size: 1.5rem;
+            font-family: 'Arial',sans-serif;
+        }
+        .predict-dec {
+            text-align: center;
+            font-weight: bold;
+            color: #e30e0e;
+            font-size: 2rem;
+            font-family: 'Helvetica',sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <span class="navbar-brand mb-0 h1"><h1>E-Commerce Category Prediction</h1></span>
+    </nav>
+    <div class="container">
+        <form action="/predict" method="post">
+            <h3>Give a brief description of your product:</h3>
+            <textarea name="product_description" id="product_description" cols="100" rows="5"></textarea>
+            <!-- Submit -->
+            <input type="submit" value="Submit" class="btn btn-primary submit-button">
+        </form>
+        <br>
+        <h3 class="predict-dec">{{ prediction_text }}</h3> 
+        <br>
+        <p class="copyright">Copyrights 2023 Sayam Kumar</p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+gunicorn
+flask
+scikit-learn
+joblib
+nltk
+symspellpy

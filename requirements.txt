@@ -4,3 +4,4 @@ scikit-learn
 joblib
 nltk
 symspellpy
+tensorflow
